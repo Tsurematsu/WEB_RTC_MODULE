@@ -23,7 +23,6 @@ async function externalServers_thread(message) {
         });
     } catch (error) {
         if (parentPort !== null) {
-            // @ts-ignore
             parentPort.postMessage({error})
         }
     }

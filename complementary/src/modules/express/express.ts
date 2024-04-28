@@ -7,7 +7,7 @@ export default function App():express.Application {
         res.send('Hello World');
     });
 
-    app.use(express.static(path.join(__dirname, '../../../dist/')));
+    app.use("/dist", express.static(path.join(__dirname, '../../../dist/')));
     app.use("/cli", express.static(path.join(__dirname, '../../client/')));
     
     // app.use(modRewrite([

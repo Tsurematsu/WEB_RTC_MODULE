@@ -3,7 +3,6 @@ import http_proxy from 'http-proxy';
 import express from 'express';
 import type { IWorkers } from '../workers/workers';
 import dotenv from 'dotenv';
-import modRewrite from 'connect-modrewrite';
 dotenv.config();
 const HOST = process.env.hostServers || "http://localhost";
 const proxy = http_proxy.createProxyServer();

@@ -1,6 +1,6 @@
 import clearConsole  from "./console/clearConsole"
 import log from "./console/log" 
-
+import input from "./console/input"
 /**
  * Object containing console functions, such as clearConsole and log
  * 
@@ -11,9 +11,7 @@ import log from "./console/log"
  */
 const console= {
     clearConsole,
-    log
+    log,
+    input,
 }
-
-export {
-    console
-}
+export {console}
