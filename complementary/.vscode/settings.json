@@ -3,6 +3,7 @@
         "Inicialización",
         "modrewrite",
         "networkidle",
-        "reactserver"
+        "reactserver",
+        "sokete"
     ]
 }
