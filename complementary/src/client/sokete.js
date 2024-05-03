@@ -68,4 +68,8 @@ export default async function sokete({ url="/", name="Juan", room="room1"}) {
     socket.on(eventNames.candidate, (candidate, sender) => {
         peerClients[sender].addIceCandidate(new RTCIceCandidate(candidate));
     });
+    socket.on("leave", (id) => {
+        peerClients[id].close();
+        delete peerClients[id];
+    });
 }
