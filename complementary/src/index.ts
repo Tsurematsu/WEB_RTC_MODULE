@@ -26,7 +26,6 @@ async function main(){
     await pages(2);
     await pages(3);
     
-    // await input('Press any key to close the server');
     await new Promise((resolve)=>setTimeout(resolve, 5000));
     server.close();
     process.exit();

@@ -65,6 +65,7 @@ export default async function sokete({ url="/", name="Juan", room="room1"}) {
     socket.on(eventNames.answer, (answer, sender) => {
         peerClients[sender].setRemoteDescription(new RTCSessionDescription(answer));
     });
+    
     socket.on(eventNames.candidate, (candidate, sender) => {
         peerClients[sender].addIceCandidate(new RTCIceCandidate(candidate));
     });
